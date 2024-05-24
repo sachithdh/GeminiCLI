@@ -45,3 +45,5 @@ options:
   -i IMG, --img IMG  Path to an image
 ```
 
+## Contributing
+If you'd like to contribute to the Gemini Terminal Chatbot project, feel free make your changes, and submit a pull request. Contributions are always welcome and appreciated!
