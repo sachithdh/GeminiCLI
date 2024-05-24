@@ -32,7 +32,7 @@ gemini -i <path/to/image> <prompt>
 Also you can find usage help using ```gemini --help``` command
 
 ```bash
-gemini --help
+$ gemini --help
 usage: gemini [-h] [-i IMG] [words ...]
 
 Gemini AI for terminal
