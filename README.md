@@ -23,7 +23,7 @@ If you don't already have Gemini API key create a key from [here](https://aistud
 ```bash
 gemini <prompt>
 ```
-**Prompt that includes images.
+**Prompt that includes images**
 
 ```bash
 gemini -i <path/to/image> <prompt>
