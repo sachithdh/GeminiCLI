@@ -1,4 +1,4 @@
-# Gemini-Terminal-Chatbot
+# Gemini-For-Terminal
 
 Using this tool you can use latest [gemini-1.5-pro-latest](https://ai.google.dev/gemini-api/docs/models/gemini#gemini-1.5-pro-expandable) generative model in your terminal.
 
@@ -8,7 +8,7 @@ Using this tool you can use latest [gemini-1.5-pro-latest](https://ai.google.dev
 If you don't already have Gemini API key create a key from [here](https://aistudio.google.com/app/apikey).
 
 **Download the .deb File**
-- Go to the [Releases](https://github.com/sacheex/Gemini-Terminal-chatbot/releases/) section of this repository.
+- Go to the [Releases](https://github.com/sacheex/Gemini-For-Terminal/releases) section of this repository.
 - Find the desired version and download the .deb file
 - Navigate to the directory where the .deb file is located
 - Run the installation command:
