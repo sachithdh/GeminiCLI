@@ -62,7 +62,7 @@ def get_response(prompt):
         generation_config = genai.types.GenerationConfig(
             candidate_count = 1,
             temperature = 0.5
-        )
+        ),
         stream=True
     )
     for chunk in response:
@@ -80,10 +80,10 @@ def to_display(text):
     Returns:
         str: The formatted text ready for display.
     """
-    text = text.replace('**', '')
-    text = text.replace('*', '\n    •')
 
     text = text.replace("##", "")
+
+    # Add ANCI styles to the output
     text = re.sub(r'\*\*(.*?)\*\*', r'\033[1m\1\033[0m', text, flags=re.DOTALL)
     text = re.sub(r'\*(.*?)\*', r'\033[3m\1\033[0m', text, flags=re.DOTALL)
     text = re.sub(r'^(    \*.*)$', r'\n\1', text, flags=re.MULTILINE)
