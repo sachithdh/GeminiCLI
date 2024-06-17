@@ -2,6 +2,7 @@ import google.generativeai as genai
 import os
 import argparse
 import PIL.Image
+import re
 from dotenv import load_dotenv
 # import textwrap
 
@@ -62,8 +63,10 @@ def get_response(prompt):
             candidate_count = 1,
             temperature = 0.5
         )
+        stream=True
     )
-    return response.text
+    for chunk in response:
+        to_display(chunk.text)
 
 
 # Format text for display
@@ -80,9 +83,12 @@ def to_display(text):
     text = text.replace('**', '')
     text = text.replace('*', '\n    •')
 
-    # wrapped_text = textwrap.fill(text, width=70)
+    text = text.replace("##", "")
+    text = re.sub(r'\*\*(.*?)\*\*', r'\033[1m\1\033[0m', text, flags=re.DOTALL)
+    text = re.sub(r'\*(.*?)\*', r'\033[3m\1\033[0m', text, flags=re.DOTALL)
+    text = re.sub(r'^(    \*.*)$', r'\n\1', text, flags=re.MULTILINE)
 
-    return text
+    print(text)
     
 
 def main():
@@ -90,11 +96,7 @@ def main():
     Main function to execute the program.
     """
     prompt = arg_parse()
-    response = get_response(prompt)
-
-    text = to_display(response)
-
-    print("\n", text)
+    get_response(prompt)
 
 if __name__ == "__main__":
     main()
