@@ -9,7 +9,7 @@ If you don't already have Gemini API key create a key from [here](https://aistud
 
 **Download the .deb File**
 - Go to the [Releases](https://github.com/sacheex/Gemini-For-Terminal/releases) section of this repository.
-- Find the desired version and download the .deb file
+- Find the desired version and download the .deb file (Latest version is recommended)
 - Navigate to the directory where the .deb file is located
 - Run the installation command:
   ```bash
