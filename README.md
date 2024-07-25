@@ -1,6 +1,6 @@
 # Gemini-For-Terminal
 
-Using this tool you can use latest [gemini-1.5-pro-latest](https://ai.google.dev/gemini-api/docs/models/gemini#gemini-1.5-pro-expandable) generative model in your terminal.
+A tool to use latest [gemini-1.5-pro-latest](https://ai.google.dev/gemini-api/docs/models/gemini#gemini-1.5-pro-expandable) generative model in your terminal.
 
 ## Installation
 
