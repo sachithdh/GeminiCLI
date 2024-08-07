@@ -5,6 +5,7 @@ A tool to use latest [gemini-1.5-pro-latest](https://ai.google.dev/gemini-api/do
 ## Installation
 
 **Generate API key**
+
 If you don't already have Gemini API key create a key from [here](https://aistudio.google.com/app/apikey).
 
 **Download the .deb File**
